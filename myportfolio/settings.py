@@ -10,6 +10,11 @@ import os
 # import dotenv
 # import dj_database_url
 
+from django.core.management.commands.runserver import Command as runserver
+
+ALLOWED_HOSTS = ["*"]
+runserver.default_port = "1000"  # <-- Your port
+runserver.default_addr = "0.0.0.0"  # <-- Your address
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
