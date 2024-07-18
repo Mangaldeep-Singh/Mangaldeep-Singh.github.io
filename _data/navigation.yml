@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: Projects
+  link: /works.html
+- name: Experience
+  link: /exp/
+- name: Blog
+  link: /blog.html
+- name: Resume
+  link: /assets/Mangaldeep Singh plsql.pdf
+- name: About
+  link: /about/

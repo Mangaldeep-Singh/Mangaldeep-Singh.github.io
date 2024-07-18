@@ -1,0 +1,166 @@
+/* assets/css/style.scss */
+
+/* .timeline {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .timeline-item {
+    margin-bottom: 2em;
+  }
+  
+  .timeline-item h2 {
+    margin-top: 0;
+  }
+  
+  .timeline-item .date {
+    font-weight: bold;
+  }
+  
+  .timeline-item .company {
+    font-style: italic;
+  }
+  
+  .post-container {
+    width: 100%;
+  }
+  
+  .post-content-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .prose {
+    max-width: 100%;
+  } */
+  /* for timeline vr */
+  
+
+
+  /* General Styles for Timeline */
+/* General Styles for Timeline */
+.timeline-container {
+    width: 100%;
+    padding: 50px 0;
+    position: relative;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style: none;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ff9f55;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    padding: 10px 20px; /* Adjusted padding */
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff9f55;
+    border: 3px solid #fff;
+    top: 10px; /* Adjusted this value to reduce spacing between the box and the dot */
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item.left::after {
+    left: 100%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item.right::after {
+    left: 0;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-content {
+    padding: 15px; /* Adjusted padding */
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff9f55; /* Adjusted border color to match the dot */
+    color: white; /* White font color */
+    margin-top: -20px; /* Added negative margin to reduce space */
+  }
+  
+  .timeline-content h2,
+  .timeline-content h3,
+  .timeline-content h4,
+  .timeline-content p {
+    margin: 0 0 10px;
+    color: white; /* Ensure all text within the boxes is white */
+  }
+  
+  .timeline-content .timeline-date h2 {
+    font-size: 1.2em;
+    color: #ff9f55;
+  }
+  
+  .timeline-content .timeline-description h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: white; /* White font color */
+  }
+  
+  .timeline-content .timeline-description h4 {
+    font-size: 1.2em;
+    color: #ddd; /* Slightly lighter white */
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content .timeline-description p {
+    margin: 0;
+  }
+  
+  .timeline-item.left .timeline-content {
+    transform: translateX(-30%); /* Adjusted to bring the boxes closer to the line */
+  }
+  
+  .timeline-item.right .timeline-content {
+    transform: translateX(30%); /* Adjusted to bring the boxes closer to the line */
+  }
+/* Media Query for Screens Larger than 768px */
+@media (min-width: 768px) {
+    .timeline-container {
+      display: block;
+    }
+  }
+  
+  /* Media Query for Screens Smaller than 768px */
+  @media (max-width: 767px) {
+    .timeline-container {
+      display: none;
+    }
+  }  
