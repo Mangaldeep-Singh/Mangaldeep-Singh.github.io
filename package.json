@@ -1,12 +1,10 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "cssnano": "^6.0.0",
-    "postcss": "^8.4.13",
-    "tailwindcss": "^3.3.1"
-  },
   "dependencies": {
-    "simple-jekyll-search": "^1.10.0",
-    "valine": "^1.5.1"
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "scripts": {
+    "build:css": "postcss _assets/css/main.css -o _site/assets/css/main.css"
   }
 }
