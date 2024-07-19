@@ -1,20 +1,17 @@
 module.exports = {
-  darkMode: 'class',
-  content: [
-    './_drafts/**/*.html',
+  purge: [
     './_includes/**/*.html',
     './_layouts/**/*.html',
-    './_posts/*.md',
-    './*.md',
+    './_pages/**/*.html',
+    './_posts/**/*.md',
     './*.html',
   ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
-    theme: {
-      extend: {},
-      color: {
-        "PRIMARY": '#f6ecc9' ,
-      }
-    },
+    extend: {},
   },
-  plugins: []
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }
