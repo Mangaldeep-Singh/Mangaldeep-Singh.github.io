@@ -10,6 +10,7 @@ gem "jekyll-toc" # Add this line for the TOC plugin
 gem 'webrick'
 gem 'jekyll-postcss'
 gem 'jemoji'
+gem "kramdown-parser-gfm"
 
 group :jekyll_plugins do
     gem 'jekyll-sitemap'
