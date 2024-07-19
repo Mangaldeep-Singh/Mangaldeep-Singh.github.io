@@ -38,12 +38,15 @@ jobs:
 
       - name: Install dependencies
         run: |
-          gem install bundler kramdown-parser-gfm
+          gem install bundler
           npm install
           bundle install
 
-      - name: Build site
-        run: bundle exec jekyll build
+      - name: Build CSS with PostCSS and Tailwind
+        run: npm run build:css
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
 
