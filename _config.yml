@@ -1,8 +1,8 @@
 title: Mangaldeep Singh
-email: dungbuit1k28@gamil.com
-description: A markdown blog made by Mangaldeep Singh aka Zhao (Mangaldeep-Singh). Hosted on Mangaldeep-Singh.github.io. I'll write something i like maybe my study or life.
+email: mangaldeep95.ms@gamil.com
+description: A markdown blog made by Mangaldeep Singh . Hosted on mangaldeep-singh.github.io. I'll write something i like maybe my study or life.
 baseurl: "" 
-url: "https://Mangaldeep-Singh.github.io/" 
+url: "https://mangaldeep-singh.github.io/" 
 twitter_username: Mangaldeep-Singh
 github_username:  Mangaldeep-Singh
 author: Mangaldeep Singh
@@ -10,7 +10,7 @@ language: "en-us"
 
 timezone: Asia/Bangkok
 
-google_analytics: 'G-HSCBJBJKGQ'
+# google_analytics: 'G-HSCBJBJKGQ'
 
 markdown: kramdown
 highlighter: rouge
@@ -76,11 +76,24 @@ defaults:
       toc: true
 
 
-exclude:
-  - package.json
-  - postcss.config.js
-  - tailwind.config.js
+# exclude:
+#   - package.json
+#   - postcss.config.js
+#   - tailwind.config.js
 
 # Include the directories to be processed
 include:
   - _pages
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - LICENSE.md
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+
