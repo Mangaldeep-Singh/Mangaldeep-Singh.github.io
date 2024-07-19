@@ -1,9 +1,14 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
+gem "jekyll", "3.9.5"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-theme-primer"
+gem "jekyll-feed"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "jekyll-toc" # Add this line for the TOC plugin
 gem 'webrick'
 gem 'jekyll-postcss'
-gem "jekyll-toc"
 gem 'jemoji'
 
 group :jekyll_plugins do
