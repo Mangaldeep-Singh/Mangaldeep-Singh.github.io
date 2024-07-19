@@ -8,7 +8,7 @@ on:
       - 'Gemfile'
       - 'README.md'
       - 'LICENSE.md'
-      
+
 permissions:
   contents: read
   pages: write
@@ -30,39 +30,24 @@ jobs:
         with:
           ruby-version: 3.1
           bundler-cache: true
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
 
-      - name: Update Bundler
-        run: gem install bundler
-
-      - name: Install PostCSS plugins
-        run: npm install
-
-      - name: Check installed gems
-        run: bundle list
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          npm install
+          bundle install
 
       - name: Build site
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: true
-
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
   deploy:
