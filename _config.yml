@@ -75,7 +75,7 @@ defaults:
     values:
       toc: true
 
-
+theme: null
 # exclude:
 #   - package.json
 #   - postcss.config.js
