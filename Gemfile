@@ -9,6 +9,7 @@ gem "jekyll-toc"
 gem "webrick"
 gem "jekyll-postcss"
 gem "jemoji"
+gem "kramdown-parser-gfm"
 
 # Performance-booster for watching directories and fix for livereload.
 gem "wdm", "~> 0.1.1", install_if: Gem.win_platform?
