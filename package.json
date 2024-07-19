@@ -4,7 +4,9 @@
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.2"
   },
+  
   "scripts": {
-    "build:css": "postcss _assets/css/main.css -o _site/assets/css/main.css"
-  }
+    "build:css": "postcss assets/css/main.css -o _site/assets/css/main.css && postcss assets/css/style.css -o _site/assets/css/style.css && postcss assets/css/github.css -o _site/assets/css/github.css"
+  
 }
+
