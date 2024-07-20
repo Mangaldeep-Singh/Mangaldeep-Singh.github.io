@@ -1,11 +1,13 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@layer base {  
-    html {
-      font-family: "Be Vietnam Pro", sans-serif;
-      scroll-behavior: smooth;
-      @apply dark:text-white;
-    }
+@layer base {
+  html {
+    font-family: "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+    @apply dark:text-white;
+  }
 
     ::-webkit-scrollbar {
       width: 8px;
