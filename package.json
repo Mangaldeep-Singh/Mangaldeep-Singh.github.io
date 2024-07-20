@@ -4,7 +4,7 @@
   "description": "Your project description",
   "main": "index.js",
   "scripts": {
-    "build": "postcss assets/css/main.css -o _site/assets/css/main.css && postcss assets/css/style.css -o _site/assets/css/style.css && postcss assets/css/github.css -o _site/assets/css/github.css"
+    "build:css": "postcss assets/css/main.css -o _site/assets/css/main.css && postcss assets/css/style.css -o _site/assets/css/style.css && postcss assets/css/github.css -o _site/assets/css/github.css"
   },
   "author": "Your Name",
   "license": "MIT",
