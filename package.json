@@ -1,9 +1,10 @@
 {
-  "name": "your-project-name",
+  "name": "mangaldeep-singh.github.io",
   "version": "1.0.0",
   "description": "Your project description",
+  "main": "index.js",
   "scripts": {
-    "build:css": "postcss assets/css/main.css -o _site/assets/css/main.css && postcss assets/css/style.css -o _site/assets/css/style.css && postcss assets/css/github.css -o _site/assets/css/github.css"
+    "build": "postcss assets/css/main.css -o _site/assets/css/main.css && postcss assets/css/style.css -o _site/assets/css/style.css && postcss assets/css/github.css -o _site/assets/css/github.css"
   },
   "dependencies": {
     "postcss": "^8.4.0",
@@ -12,5 +13,17 @@
   },
   "devDependencies": {
     "postcss-cli": "^9.1.0"
+  },
+
+  {
+  
+  "author": "Mangaldeep Singh",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^8.3.6",
+    "autoprefixer": "^10.2.6",
+    "tailwindcss": "^2.2.7"
   }
+}
+
 }
