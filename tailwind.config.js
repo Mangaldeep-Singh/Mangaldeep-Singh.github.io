@@ -1,13 +1,20 @@
 module.exports = {
+  darkMode: 'class',
   content: [
+    './_drafts/**/*.html',
     './_includes/**/*.html',
     './_layouts/**/*.html',
-    './_pages/**/*.html',
-    './_posts/**/*.md',
+    './_posts/*.md',
+    './*.md',
     './*.html',
   ],
   theme: {
-    extend: {},
+    theme: {
+      extend: {},
+      color: {
+        "PRIMARY": '#f6ecc9' ,
+      }
+    },
   },
-  plugins: [],
+  plugins: []
 }
