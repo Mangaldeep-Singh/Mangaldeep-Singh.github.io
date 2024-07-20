@@ -88,7 +88,7 @@
     }
 
     #results-container {
-        @apply w-full box-border my-4 px-4 py-4 text-gray-900 bg-white border border-solid border-slate-300 rounded-lg;
+        @apply w-full box-border my-4 px-4 py-4 text-gray-900 bg-white border border-solid border-blue-300 rounded-lg;
     }
 
     #results-container li {
