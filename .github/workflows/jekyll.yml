@@ -38,6 +38,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          npm cache clean
           gem install bundler
           npm install
           bundle install
