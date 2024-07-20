@@ -38,7 +38,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm cache clean
+          npm cache clean --force
+          rm -rf node_modules package-lock.json
           gem install bundler
           npm install
           bundle install
