@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.9.5"
+gem "jekyll"
 gem "jekyll-theme-primer"
-gem "jekyll-feed", "~> 0.12"
+gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-toc"
